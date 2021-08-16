@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 html,body{
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-    background:#F3F4ED;
+    background:#FBFCFF;
     max-width: 54rem;
+    font-family: 'Lato', sans-serif;
 }
 header{
     text-align: center;
     padding: 3rem;
     margin: 3rem auto;
     font-size: 2.75rem;
-    color: #1CC4DB;
-    -webkit-text-stroke: 1px black;
+
+  
+}
+header h1{
+  -webkit-text-stroke: 1px #D0CCD0;
     text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
       -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -22,10 +27,9 @@ header{
 .btn{
     padding:1rem;
     border-radius: 10px;
-    background-color: #FD5E7C;
-    color: #EEC42D;
-    font-size: 1.5rem;
-    border: 3px solid #906DDC;
+    background: #D0CCD0;
+    font-size: 1.2rem;
+    border: 3px solid #605856;
 }
 footer{
 
@@ -35,7 +39,7 @@ margin-top: 5rem;
   font-size: 1.5rem;  
 }
 span{
-  color:#FD5E7C;  
+  color:#605856;  
 }
 
 #triangle{
@@ -43,34 +47,109 @@ width: 0;
 height: 0;
 border-style: solid;
 border-width: 0 100px 173.2px 100px;
-border-color: transparent transparent #007bff transparent;
+border-color: transparent transparent #605856 transparent;
 }
 #triangle:hover{
   transform: rotate(360deg);
   transition: 2s;
 }
 .intro-container{
-  padding:3rem 0.5rem;
+  padding:3rem 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-.types-container{
-  padding:3rem;
-  margin:auto;
+.type{
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.25rem;;
+}
+
+.types{
+  margin: 0 auto;
+  padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.figures{
- display : flex;
- flex-direction: row;
+
+.equi ul{
+  list-style: none;
+
 }
 .properties{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 1.25rem;
+}
+.page-intro{
+  padding: 1rem;
+  font-size: 1.5rem;;
+}
+.gameDiv-left{
+  display:flex;
+  padding: 3rem 1rem;
+  justify-content: space-around;
+  background: #605856;
+  border-radius: 1rem;
+  margin: 1rem;
+  color: #FBFCFF;
+}
+
+.gameDiv-left label{
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.gameDiv-left input{
+  padding: 0.25rem;
+}
+
+.area{
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  background: #605856;
+  color: #FBFCFF;
+}
+.area-intro{
+  margin: 1rem;
+}
+.area-opt{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+
+}
+.area-opt label{
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.area-opt input{
+  padding: 0.25rem;
+}
+.outputDiv{
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size:1.3rem;
+}
+.result-btn{
+  padding: 0.5rem;
+  width: 8rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  margin-left: 4.5rem;;
+}
+.base-input{
+  margin-left: .8rem;
+}
+#quiz-form{
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+hr{
+  color: #605856;
 }
 label{
   display: block;
@@ -82,4 +161,64 @@ nav{
 }
 a{
   text-decoration: none;
+  color:#274156;
+}
+
+@media screen and (max-width:600px) {
+
+  header{
+    font-size: 1.5rem;
+  }
+  .btn{
+    padding:0.5rem 0.5rem;
+     border:1px solid #605856;
+    font-size: 1.2rem;
+}
+.action-btn{
+  flex-direction: column;
+  margin: 1.2rem;
+}
+footer{
+  font-size: 1rem;
+}
+.base-input{
+  margin-left: .8rem;
+}
+.area-opt{
+  padding: 1rem;
+  flex-direction: column;
+
+}
+.gameDiv-left{
+  flex-direction: column;
+  padding: 1rem;
+}
+.area{
+  padding:1rem;
+}
+.game-intro{
+  padding: 1rem;
+}
+.gameDiv-form{
+  padding: 1rem;;
+}
+.type{
+  flex-direction: column;
+
+}
+.type img{
+  width: fit-content;
+}
+.intro-container{
+  padding:2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.properties{
+  display: block;
+  margin: 1rem;
+}
+.properties img{
+  width:100%;
+}
 }

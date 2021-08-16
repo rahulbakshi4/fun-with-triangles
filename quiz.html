@@ -9,12 +9,13 @@
     <title>Quiz</title>
 </head>
 <body>
-    <a href="index.html"> <i class="fas fa-arrow-left"></i> Back to home</a>
-    <h1>Test Your Triangle Knowledge Here</h1>
+    <nav><a href="index.html"> <i class="fas fa-arrow-left"></i> Back to home</a>
+    </nav>
+    <h1 class="page-intro">Test Your Triangle Knowledge Here</h1>
 
     <form id="quiz-form">
         <div>
-        <label for="question 1">Which formula will let you find the area of a triangle?</label>
+        <label for="question 1">1. Which formula will let you find the area of a triangle?</label>
         <ul style="list-style: none;">
           <li><input type="radio" name="ques1" value="option1" required>1/2*base*height</li>
           <li><input type="radio" name="ques1" value="option2" required>3/4*base*height</li>
@@ -22,7 +23,7 @@
         </ul>
     </div>
     <div>
-        <label for="question 2">Given three angles of a triangle as 30° 75° 75°.Name the type of triangle</label>
+        <label for="question 2">2. Given three angles of a triangle as 30° 75° 75°.Name the type of triangle</label>
         <ul style="list-style: none;">
             <li><input type="radio" name="ques2" value="option1" required>Actue </li>
             <li><input type="radio" name="ques2" value="option2" required>Right</li>
@@ -30,7 +31,7 @@
         </ul>
     </div>
     <div>
-        <label for="question 3">Given three angles of a triangle as 100° 45° 35°.Name the type of triangle</label>
+        <label for="question 3">3. Given three angles of a triangle as 100° 45° 35°.Name the type of triangle</label>
         <ul style="list-style: none;">
             <li><input type="radio" name="ques3" value="option1" required>Actue </li>
             <li><input type="radio" name="ques3" value="option2" required>Right</li>
@@ -39,7 +40,7 @@
         </ul>
     </div>
     <div>
-        <label for="question 4">Given three angles of a triangle as 90° 45° 45°.Name the type of triangle</label>
+        <label for="question 4">4. Given three angles of a triangle as 90° 45° 45°.Name the type of triangle</label>
         <ul style="list-style: none;">
             <li><input type="radio" name="ques4" value="option1" required>Actue </li>
             <li><input type="radio" name="ques4" value="option2" required>Right</li>
@@ -47,7 +48,7 @@
         </ul>
     </div>
     <div>
-        <label for="question 5">According to angle sum property of triangles, the sum of all angles of triangle must be equal to?</label>
+        <label for="question 5">5. According to angle sum property of triangles, the sum of all angles of triangle must be equal to?</label>
         <ul style="list-style: none;">
             <li><input type="radio" name="ques5" value="option1" required>270°</li>
             <li><input type="radio" name="ques5" value="option2" required>180°</li>
@@ -55,16 +56,17 @@
         </ul>
     </div>
     <div>
-        <label for="question 6">Sum of two sides of a triangle but be _____ than the third side.</label>
+        <label for="question 6">6. Sum of two sides of a triangle must be _____ than the third side.</label>
         <ul style="list-style: none;">
             <li><input type="radio" name="ques6" value="option1" required>Greater</li>
             <li><input type="radio" name="ques6" value="option2" required>Lesser</li>
         </ul>
     </div>
-    <button type="submit">Submit</button>
+    <div class="outputDiv" id="quizOutput"></div>
+    <button class="result-btn" type="submit">Submit</button>
         </form>
         
-        <div id="quizOutput"></div>
+        <div class="outputDiv" id="quizOutput"></div>
         <script src="quiz.js"></script>
 </body>
 </html>

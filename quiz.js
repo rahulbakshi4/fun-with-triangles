@@ -15,7 +15,6 @@ form.addEventListener('submit', (e) => {
         if(data[i]==answers[index]){
             score++;
             index++;
-            q.style.backgroundColor = "pink";
         }
      }
 

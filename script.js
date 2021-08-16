@@ -38,7 +38,7 @@ const findHypotenuse = (e) =>{
     let h = Number(height.value)
     let hyp = Math.sqrt(Math.pow(b,2)+Math.pow(h,2))
     console.log(hyp)
-   hypotenuse.innerText = `Here have it , Hypotenuse = ${hyp}`
+   hypotenuse.innerText = `Hypotenuse = ${hyp}`
     
 }
 findBtn.addEventListener('click',findHypotenuse)

@@ -12,17 +12,18 @@
     <nav>
         <a href="index.html"><i class="fas fa-arrow-left"></i> Back to home</a>
     </nav>
-    <div>
-        <h1>Welcome to the fun Parts</h1>
+    <div class="page-intro">
+        <h1>Welcome to the Fun Parts</h1>
         <p>Here are some fun games to try on</p>
     </div>    
 
-    <section>
-        <div>
+    <section class="gameDiv-left">
+        <div class="game-intro">
             <h2>Does that make a triangle?</h2>
             <h3>Enter the three angles to check if that makes a triangle</h3>
         </div>
-        <form>
+        <div class="gameDiv-form">
+        <form> 
             <label for="angleOne"> Angle 1:
                 <input  id="angleOne"type="number" min="1" required>
             </label>
@@ -32,43 +33,50 @@
             <label for="angleThree"> Angle 3:
                 <input id="angleThree" type="number" min="1" required>
             </label>
-            <button id="angleCheck-btn">Check</button>
+            <button class="result-btn" id="angleCheck-btn">Check</button>
         </form>
-        <div id="output-angleSum"></div>
+        <div class="outputDiv" id="output-angleSum"></div>
+    </div>
     </section>
-    <section>
-        <div>
+    <section class="gameDiv-left">
+        <div class="game-intro">
             <h2>Give me my Hypotenuse</h2>
-            <h3>Enter the base and height of the right triangle to get your hypotenuse</h3>
+            <h3>Enter the base and height of the right triangle to get <br> your hypotenuse</h3>
         </div>
-        <form>
-            <label for="base">Base;
-                <input type="number" id="base"required>
+        <div>
+        <form class="gameDiv-form">
+            <label   for="base">Base:
+                <input class="base-input" type="number" id="base"required>
             </label>
-            <label for="height">Height;
+            <label for="height">Height:
                 <input type="number" id="height"required>
             </label>
-            <button id="findHypotenuse-btn">Find</button>
+            <button  class="result-btn" id="findHypotenuse-btn">Find</button>
         </form>
-        <div id="output-hypotenuse"></div>
+        <div class="outputDiv" id="output-hypotenuse"></div>
+    </div>
     </section>
-    <section>
-        <div>
+    <section class="area">
+        <div class="area-intro">
             <h2>What's the Area</h2>
             <h3>Find the area of the triangle using the either option</h3>
         </div>
-           <form action="">
-               <h3>Option 1: If you have Base and Height</h3>
-               <label for="Base">Base:
-                <input type="number" id="baseForArea"required>
-            </label>
-            <label for="Height">Height:
-                <input type="number" id="heightForArea"required>
-            </label>
-            <button id="findArea-btn">Find</button>
-           </form>
-           <div id="areaOuput"></div>
+        <div class="area-opt">
+        <div>
+            <form action="">
+                <h3>Option 1: If you have Base and Height</h3>
+                <label for="Base">Base:
+                 <input class="base-input" type="number" id="baseForArea"required>
+             </label>
+             <label for="Height">Height:
+                 <input type="number" id="heightForArea"required>
+             </label>
+             <button  class="result-btn" id="findArea-btn">Find</button>
+            </form>
+            <div class="outputDiv" id="areaOuput"></div>
+        </div>
 
+        <div>
            <form action="">
             <h3>Option 2: If you have all 3 sides</h3>
             <label for="side1">Side 1:
@@ -80,9 +88,11 @@
          <label for="side2">Side 3:
             <input type="number" id="side3"required>
         </label>
-         <button id="findAreaSide-btn">Find</button>
+         <button  class="result-btn" id="findAreaSide-btn">Find</button>
         </form>
-        <div id="areaAllSideOuput"></div>
+        <div class="outputDiv" id="areaAllSideOuput"></div>
+    </div>
+</div>
     </section>
     <script src="script.js"></script>
 </body>
