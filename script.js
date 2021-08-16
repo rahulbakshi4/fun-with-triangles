@@ -62,16 +62,24 @@ const sideTwo = document.querySelector('#side2')
 const sideThree = document.querySelector('#side3')
 const AreaBtn = document.querySelector('#findAreaSide-btn')
 const areaSideOutput = document.querySelector('#areaAllSideOuput')
-
+let area;
 const findAreaSide = (e) =>{
     e.preventDefault()
     let a = Number(sideOne.value);
     let b = Number(sideTwo.value);
     let c = Number(sideThree.value);
     
-    let s = (a+b+c)/2;
-    let area = Math.sqrt( s*(s - a)*(s - b)*(s - c))
+    if((a+b)>c && (b+c)>a && (c+a)>b){
+        let s = (a+b+c)/2;
+        area = Math.sqrt( s*(s - a)*(s - b)*(s - c))
+        areaSideOutput.innerText = `the area of triangle is ${area} sq units.`
+    }
 
-    areaSideOutput.innerText = `the area of triangle is ${area} sq units.`
+    else{
+        areaSideOutput.innerText = `Please check the sides again.`
+    }
+
+
+    
 }
 AreaBtn.addEventListener('click',findAreaSide)
