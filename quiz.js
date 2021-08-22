@@ -18,6 +18,6 @@ form.addEventListener('submit', (e) => {
         }
      }
 
-     output.innerText = `Your Score is ${score}/6.`
+     output.innerText = `Your Score is ${score}/7.`
   });
   
